@@ -4,7 +4,7 @@
 This project is a Movie Recommendation System that utilizes Natural Language Processing (NLP) techniques to suggest similar movies based on user input. The system processes movie data, including movie descriptions, genres, keywords, cast, and crew, to create a comprehensive set of tags for each movie. These tags are then transformed using stemming and vectorization to facilitate similarity comparison. Finally, the cosine similarity measure is employed to recommend movies with the highest similarity to the user's input.
 
 ## Project Setup
-1. Install the required libraries: Make sure you have the necessary Python libraries like NumPy, Pandas, scikit-learn, and nltk installed. You can install them using pip: `pip install numpy pandas scikit-learn nltk`
+1. Install the required libraries: Make sure you have the necessary Python libraries like NumPy, Pandas, scikit-learn, nltk and streamlit installed. You can install them using pip: `pip install numpy pandas scikit-learn nltk`
 
 2. Data Collection: Obtain the movie dataset files, `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv`, containing movie details and credits information, respectively.
 3. Dataset_used:-
@@ -21,7 +21,11 @@ https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
 
 2. Load and Preprocess Data: Load the movie dataset using Pandas and preprocess it using the provided script.
 
-3. Movie Recommendation: To recommend movies similar to a specific movie, call the `recommend()` function with the movie title as input.
+
+3. Movie Recommendation: To recommend movies similar to a specific movie, run the Streamlit app by executing the provided code in your PyCharm IDE.
+
+4. Web Application: The Streamlit app will open in your browser. Select a movie from the dropdown menu and click the "Recommend" button to view similar movie suggestions along with their posters.
+
 
 ## Example Code
 python
@@ -69,6 +73,21 @@ To get started with this project, follow these steps:
 4. Run the Python script to preprocess the data and create the movie recommendation system.
 
 5. Now you can use the `recommend()` function to find similar movies based on user input.
+
+## Website/App making using streamlit library
+To get started with this Movie Recommender System web application using Streamlit, follow these steps:
+
+1. Clone the repository to your local machine.
+
+2. Install the required libraries by running `pip install -r requirements.txt`.
+
+3. Download the movie dataset files, `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv`, and place them in the same directory as the Python script.
+
+4. Load the pickle files for `movie_dict.pkl` and `similarity.pkl` containing preprocessed data and similarity matrix.
+
+5. Run the Streamlit app by executing the provided code in your PyCharm IDE.
+
+6. The Streamlit app will open in your browser. Select a movie from the dropdown menu and click the "Recommend" button to view similar movie suggestions along with their posters.
 
 Feel free to explore the code, modify it to suit your preferences, and have fun discovering new movies!
 
